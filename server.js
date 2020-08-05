@@ -3,6 +3,8 @@
 const mysql = require("mysql");
 //inquirer
 const inquirer = require("inquirer");
+const conTable = require(console.table);
+
 var connection = mysql.createConnection({
   host: "localhost",
   // Your port; if not 3306
@@ -10,8 +12,8 @@ var connection = mysql.createConnection({
   // Your username
   user: "root",
   // Your password
-  password: "",
-  database: "employeeDB",
+  password: "abundance26$",
+  database: "employeesDB",
 });
 //connect prompt here:
 connection.connect(function(err){
